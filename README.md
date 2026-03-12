@@ -39,6 +39,12 @@ I am currently developing a tool that allows someone to sync their account (to-d
   -UI/UX improvements
 
 ## Getting started
-Just run:
+Using docker, just run:
 
 ```docker-compose up --build```
+
+## Some (cherry-picked) examples 
+<img width="1258" height="760" alt="strava_coach_agent" src="https://github.com/user-attachments/assets/7bc1d36b-d86c-4b23-aaf9-627e5ba3ac73" />
+
+<img width="1264" height="765" alt="mood" src="https://github.com/user-attachments/assets/243dc609-f1c0-4c67-a209-7ae6bf997bd1" />
+
