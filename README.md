@@ -39,7 +39,7 @@ I am currently developing a tool that allows someone to sync their account (to-d
   -UI/UX improvements
 
 ## Getting started
-Using docker, just run:
+First, configure your .env file with your OPENAI_API_KEY key. Then, using docker, run:
 
 ```docker-compose up --build```
 
