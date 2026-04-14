@@ -1,0 +1,11 @@
+# how to deal with http to https mess 
+
+brew install mkcert
+
+# Setup the local CA (only do this once)
+mkcert -install
+
+# Create the certificate for localhost
+mkcert localhost
+
+uvicorn api_auth_fastapi:app --reload --ssl-keyfile ./localhost-key.pem --ssl-certfile ./localhost.pem
