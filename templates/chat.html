@@ -672,7 +672,7 @@
         appendMessage(msg, 'user');
         showTyping();
 
-        fetch(window.location.pathname.replace(/\/$/, '') + '/get', {
+        fetch('/get', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: 'msg=' + encodeURIComponent(msg)

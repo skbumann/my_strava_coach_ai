@@ -27,4 +27,6 @@ USER appuser
 # Expose port 5000
 EXPOSE 5000
 
-CMD ["sh", "-c", "while ! nc -z db 5432; do sleep 1; done; python -m src.rag_helper && uvicorn app:app --host 0.0.0.0 --port 8000"]
+CMD ["sh", "-c", "while ! nc -z db 5432; do sleep 1; done; uvicorn app:app --reload --ssl-keyfile ./localhost-key.pem --ssl-certfile ./localhost.pem --host 0.0.0.0 --port 8000"]
+#uvicorn api_auth_fastapi:app --reload --ssl-keyfile ./localhost-key.pem --ssl-certfile ./localhost.pem
+#CMD ["sh", "-c", "while ! nc -z db 5432; do sleep 1; done; python -m src.rag_helper && uvicorn app:app --host 0.0.0.0 --port 8000"]

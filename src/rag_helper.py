@@ -73,6 +73,8 @@ def ingest_activity(activity: dict) -> None:
         )
         ON CONFLICT (id) DO NOTHING
     """
+    start_coords = activity.get("start_latlng") or []
+    end_coords = activity.get("end_latlng") or []
 
     params = {
         "id":                   activity["id"],
@@ -98,10 +100,10 @@ def ingest_activity(activity: dict) -> None:
         "kudos_count":          activity.get("kudos_count", 0),
         "athlete_count":        activity.get("athlete_count", 0),
         #"start_latlng":         activity.get("start_latlng"),
-        "start_lat":            activity.get("start_latlng")[0] if activity.get("start_latlng") else None,
-        "start_long":           activity.get("start_latlng")[1] if activity.get("start_latlng") else None,
-        "end_lat":              activity.get("end_latlng")[0] if activity.get("end_latlng") else None,
-        "end_long":             activity.get("end_latlng")[1] if activity.get("end_latlng") else None,
+        "start_lat":            start_coords[0] if len(start_coords) >= 2 else None,
+        "start_long":           start_coords[1] if len(start_coords) >= 2 else None,
+        "end_lat":              end_coords[0]   if len(end_coords) >= 2   else None,
+        "end_long":             end_coords[1]   if len(end_coords) >= 2   else None,
         #"end_latlng":           activity.get("end_latlng"),
         "elev_high":            activity.get("elev_high"),
         "elev_low":             activity.get("elev_low"),

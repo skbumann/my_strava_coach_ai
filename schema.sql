@@ -42,8 +42,8 @@ CREATE TABLE activities (
     end_lat               NUMERIC,
     end_long              NUMERIC,
     --end_latlng            GEOGRAPHY(Point, 4326),
-    elev_high             NUMERIC DEFAULT 0.0,
-    elev_low              NUMERIC DEFAULT 0.0,  
+    elev_high             NUMERIC,
+    elev_low              NUMERIC,  
 
     -- Timestamps
     start_date            TIMESTAMPTZ,
