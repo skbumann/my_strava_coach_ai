@@ -24,3 +24,5 @@ botocore==1.42.62
 psycopg2-binary==2.9.11
 langgraph>=0.1.0
 requests-oauthlib==2.0.0
+itsdangerous==2.2.0
+starlette-sessions==0.3.0
