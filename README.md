@@ -39,7 +39,9 @@ I am currently developing a tool that allows someone to sync their account (to-d
   -UI/UX improvements
 
 ## Getting started
-First, configure your .env file with your OPENAI_API_KEY key. Then, using docker, run:
+1. Configure your .env file with your OPENAI_API_KEY key.
+2. Follow the instructions in https_hack.txt. Strava requires a secure https url to redirect to after authorization so this provides a workaround when building locally.
+3. Using docker, run:
 
 ```docker-compose up --build```
 
