@@ -1,5 +1,5 @@
-# My Strava Coach (Under Construction)
-Make your own personal coach RAG agent informed by your historical exercise data
+# Coach Rocky (Under Construction)
+Make your own personal coach RAG agent informed by your historical Strava data
 
 # Tl;dr
 
