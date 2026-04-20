@@ -27,7 +27,7 @@ I love Strava and I use it religiously. As such, my account has a very comprehen
 
 ## Future Work
   
-  -Deploy on AWS EC2. This app is currently in the "Development" stage, which is limited to single users. 
+  -Deploy on AWS EC2. This app is currently in the "Development" stage, which is limited to single users. I'm waiting on the Strava team to approve the limit increase.
 
   -Smarter prompting. It's pretty lean right now.
   
